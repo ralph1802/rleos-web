@@ -15,34 +15,158 @@
 <body>
     <div class="container">
         <header>
-            <div class="menu">
+            <div class="menu" id="menu">
                 <a class="logotipo" href="#"><img src="img/logotipo.webp" alt="#"></a>
                 <nav class="navegacion">
-                    <a href="#">Inicio</a>
-                    <a href="#">Acerca de</a>
-                    <a href="#">Habilidades</a>
-                    <a href="#">Trabajos</a>
-                    <a href="#">Contacto</a>
+                    <a href="#menu">Inicio</a>
+                    <a href="#conoceme">Acerca de</a>
+                    <a href="#trabajos">Trabajos</a>
+                    <a href="#stack">Stack</a>
+                    <a href="#contacto">Contacto</a>
                 </nav>
             </div>
-            <div class="presentacion">
-                <h1 class="nonmbre">Hola, soy Axel Leos</h1>
-                <p class="descripcion">Ingeniero en sistemas computacionales y entusiasta del desarrollo web</p>
-                <a href="#">Chatea conmigo</a>
+            <div class="inicio" id="inicio">
+                <div class="presentacion">
+                    <h1 class="nonmbre">Hola, soy Axel Leos</h1>
+                    <p class="descripcion">Ingeniero en sistemas computacionales y entusiasta del desarrollo web</p>
+                    <a href="#">Chatea conmigo</a>
+                </div>
+                <img clss="img_perfil" src="img/php.webp" alt="#">
             </div>
-            <img clss="img_perfil" src="img/pp.webp" alt="#">
         </header>
         <section class="main">
-            <div class="conoceme">
-                <h2>Conóceme</h2>
-                <p>¡Hola! Soy un apasionado Ingeniero en Sistemas Computacionales con una pasión por el aprendizaje y el desarrollo de software. Mi objetivo es combinar mi experiencia técnica con mi entusiasmo por la programación para crear soluciones innovadoras y eficientes.</p>
-            </div> 
-            <div class="estudios">
-                <p>Ingeniero en Sistemas Computacionales - Universidad Insuco</p>
-                <p>Técnico en Mecatrónica Industrial - Escuela Industrial Álvaro Obregón</p>
-                <p>Segundo idioma - Ingles - Cursos privados</p>
+            <div class="about">
+                <div class="conoceme" id="conoceme">
+                    <h2>Conóceme</h2>
+                    <p>¡Hola! Soy un apasionado <span class="destacado">Ingeniero en Sistemas Computacionales</span> con una pasión por el aprendizaje y el desarrollo de software. Mi objetivo es combinar mi experiencia técnica con mi entusiasmo por la programación para crear soluciones innovadoras y eficientes.</p>
+                </div>
+                <div class="estudios">
+                    <p>Ingeniero en <span class="destacado">Sistemas Computacionales</span> - Universidad Insuco</p>
+                    <p>Técnico en <span class="destacado">Mecatrónica Industrial</span> - Escuela Industrial Álvaro Obregón</p>
+                    <p>Segundo idioma - <span class="destacado">Ingles</span></p>
+                    <a href="#">Descargar CV</a>
+                </div>
+            </div>
+            <div class="works" id="trabajos">
+                <h2>Mis trabajos</h2>
+                <div class="trabajos">
+                    <div class="proyectos">
+                        <img class="pagina_web" src="img/not_found.webp" alt="">
+                        <h2>Tecnología utilizada</h2>
+                        <div class="tecnologia">
+                            <img src="img/css.webp">
+                            <img src="img/html.webp">
+                            <!-- <img src="img/sass.webp"> -->
+                        </div>
+                    </div>
+                    <div class="proyectos">
+                        <img class="pagina_web" src="img/not_found.webp" alt="">
+                        <h2>Tecnología utilizada</h2>
+                        <div class="tecnologia">
+                            <img src="img/css.webp">
+                            <img src="img/html.webp">
+                            <img src="img/sass.webp">
+                        </div>
+                    </div>
+                    <div class="proyectos">
+                        <img class="pagina_web" src="img/not_found.webp" alt="">
+                        <h2>Tecnología utilizada</h2>
+                        <div class="tecnologia">
+                            <img src="img/css.webp">
+                            <img src="img/html.webp">
+                            <img src="img/sass.webp">
+                            <img src="img/rubi.webp">
+                            <img src="img/git.webp">
+                        </div>
+                    </div>
+                    <div class="proyectos">
+                        <img class="pagina_web" src="img/not_found.webp" alt="">
+                        <h2>Tecnología utilizada</h2>
+                        <div class="tecnologia">
+                            <img src="img/css.webp">
+                            <img src="img/html.webp">
+                            <img src="img/sass.webp">
+                            <img src="img/rubi.webp">
+                            <img src="img/git.webp">
+                            <img src="img/Js.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stack" id="stack">
+                <h2>Stack</h2>
+                <div class="lenguajes">
+                    <figure>
+                        <img src="img/html.webp" alt="">
+                        <div class="capa">
+                            <!-- <p>Curso Udemy</p> -->
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="img/css.webp" alt="">
+                        <div class="capa">
+                            <!-- <p>En curso</p> -->
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="img/sass.webp" alt="">
+                        <div class="capa">
+                            <!-- <p>En curso</p> -->
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="img/Js.webp" alt="">
+                        <div class="capa">
+                            <p>En curso</p>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="img/react.webp" alt="">
+                        <div class="capa">
+                            <p>En curso</p>
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="img/figma.webp" alt="">
+                        <div class="capa">
+                            <!-- <p>En curso</p> -->
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="img/rubi.webp" alt="">
+                        <div class="capa">
+                            <!-- <p>En curso</p> -->
+                        </div>
+                    </figure>
+                    <figure>
+                        <img src="img/git.webp" alt="">
+                        <div class="capa">
+                            <!-- <p>En curso</p> -->
+                        </div>
+                    </figure>
+                </div>
             </div>
         </section>
+        <footer>
+            <div class="contacto" id="contacto">
+                <h2>Escríbeme un correo</h2>
+                <form class="formulario">
+                    <input type="text" placeholder="Nombre" name="nombre" required="">
+                    <input type="email" placeholder="Correo" name="correo" required="">
+                    <textarea name="mensaje" placeholder="Mensaje:"></textarea>
+                    <input class="boton" type="submit" value="Enviar">
+                </form>
+            </div>
+            <div class="redes">
+                <h2>Mis redes</h2>
+                <div class="links">
+                    <a target="_blank" href="https://github.com/ralph1802"><img src="img/github.webp"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/ricardo-leos-624bb8267/"><img src="img/linkedin.webp"></a>
+                    <a target="_blank" href="https://twitter.com/subject1802"><img src="img/twitterx.webp"></a>
+                    <a target="_blank" href="https://www.instagram.com/rleos.23?igsh=eHppb2s3eG1weHR0&utm_source=qr"><img src="img/instagram.webp"></a>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

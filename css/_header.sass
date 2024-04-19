@@ -3,25 +3,58 @@ header
         align-items: center
         display: flex
         justify-content: start
-        margin: 0 150px
         .logotipo
         .navegacion
             margin: auto
             a
+                margin: 30px
                 font-size: 16px
                 color: $negro
                 font-weight: bold
                 padding: 5px 10px
-                margin: 0 20px
                 text-decoration: none
                 &:hover
                     text-decoration: underline
                     color: $secundario_1
-                &:focus
-                    
+                &:active                    
                     text-decoration: underline
-                    olor: $secundario_2
-                
+                    color: $secundario_2
+    .inicio
+        margin-top: 50px
+        display: flex
+        justify-content: space-between
+        .presentacion
+            display: flex
+            flex-direction: column
+            width: 60% 
+            justify-content: center
+            align-items: start
+            h1
+                margin: 20px 0
+                font-size: 64px
+                font-weight: 900
+            p
+                margin-top: 0
+                font-size: 32px
+            a
+                text-decoration: none
+                font-size: 16px
+                font-weight: 600
+                color: $negro
+                background: $secundario_1
+                padding: 10px 10px
+                border-radius: 10px
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5)
+                &:hover
+                    background: $secundario_2
+
+        img
+            width: 350px
+            border-radius: 50%
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5)
+
+        
+    
         
     
 

@@ -3,32 +3,246 @@
   box-sizing: border-box; }
 
 body {
-  background: #f3f3f3;
+  margin: auto;
+  max-width: 1400px;
   font-family: "Nunito Sans";
   font-size: 16px;
   background: linear-gradient(to bottom, #CBC6C6, #F3F3F3); }
   body .container {
-    margin: 20px 20px; }
+    margin: 20px 150px; }
 
 header .menu {
   align-items: center;
   display: flex;
-  justify-content: start;
-  margin: 0 150px; }
+  justify-content: start; }
   header .menu .navegacion {
     margin: auto; }
     header .menu .navegacion a {
+      margin: 30px;
       font-size: 16px;
       color: #000;
       font-weight: bold;
       padding: 5px 10px;
-      margin: 0 20px;
       text-decoration: none; }
       header .menu .navegacion a:hover {
         text-decoration: underline;
         color: #128C7E; }
-      header .menu .navegacion a:focus {
+      header .menu .navegacion a:active {
         text-decoration: underline;
-        olor: #075E54; }
+        color: #075E54; }
+header .inicio {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between; }
+  header .inicio .presentacion {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    align-items: start; }
+    header .inicio .presentacion h1 {
+      margin: 20px 0;
+      font-size: 64px;
+      font-weight: 900; }
+    header .inicio .presentacion p {
+      margin-top: 0;
+      font-size: 32px; }
+    header .inicio .presentacion a {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      color: #000;
+      background: #128C7E;
+      padding: 10px 10px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); }
+      header .inicio .presentacion a:hover {
+        background: #075E54; }
+  header .inicio img {
+    width: 350px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+
+.main .about {
+  margin: 60px 0;
+  display: flex; }
+.main .destacado {
+  color: #128C7E;
+  font-weight: bold; }
+.main .conoceme {
+  width: 70%;
+  display: flex;
+  flex-direction: column; }
+  .main .conoceme h2 {
+    font-size: 64px;
+    font-weight: bold; }
+  .main .conoceme p {
+    font-size: 24px; }
+.main .estudios {
+  border-left: 2px solid #128C7E;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px; }
+  .main .estudios p {
+    font-size: 24px;
+    margin: 20px 5px; }
+  .main .estudios a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    background: #128C7E;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    margin: 50px auto; }
+    .main .estudios a:hover {
+      background: #075E54; }
+
+.stack h2 {
+  margin: 60px;
+  text-align: center;
+  font-size: 64px;
+  font-weight: bold; }
+.stack .lenguajes {
+  display: flex; }
+  .stack .lenguajes figure {
+    position: relative;
+    width: 150px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0; }
+    .stack .lenguajes figure:hover img {
+      filter: brightness(70%); }
+    .stack .lenguajes figure:hover .capa {
+      opacity: 1; }
+    .stack .lenguajes figure img {
+      width: 100%; }
+    .stack .lenguajes figure .capa {
+      position: absolute;
+      top: 28%;
+      left: 22%;
+      opacity: 0; }
+      .stack .lenguajes figure .capa p {
+        font-size: 20px;
+        font-weight: bold;
+        color: #ffff;
+        text-shadow: 0px 1px 1px #000; }
+
+.works h2 {
+  text-align: center;
+  font-size: 64px;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 30px; }
+
+.trabajos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .trabajos .proyectos {
+    text-align: center;
+    width: 250px;
+    border: 2px solid #128C7E;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px; }
+    .trabajos .proyectos img {
+      width: 150px; }
+    .trabajos .proyectos:hover {
+      filter: brightness(110%); }
+      .trabajos .proyectos:hover h2 {
+        color: #128C7E; }
+    .trabajos .proyectos h2 {
+      font-size: 24px;
+      margin: 20px; }
+    .trabajos .proyectos .tecnologia {
+      justify-content: space-around; }
+      .trabajos .proyectos .tecnologia img {
+        width: 25px; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0; }
+
+.redes {
+  text-align: center;
+  padding: 20px;
+  width: 40%; }
+  .redes h2 {
+    font-size: 64px;
+    font-weight: bold; }
+
+.links {
+  display: flex;
+  justify-content: space-evenly; }
+  .links img {
+    width: 50px; }
+
+.contacto {
+  text-align: center;
+  padding: 50px;
+  border-right: 2px solid #128C7E; }
+  .contacto h2 {
+    font-size: 64px;
+    font-weight: bold; }
+
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .formulario input[type="text"] {
+    width: 49%;
+    margin-bottom: 15px;
+    border: 2px solid #128C7E;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #a4a4a4;
+    outline: none; }
+    .formulario input[type="text"]:focus {
+      border: 2px solid #075E54; }
+  .formulario input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+    border: 2px solid #128C7E;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #a4a4a4;
+    outline: none; }
+    .formulario input[type="email"]:focus {
+      border: 2px solid #075E54; }
+  .formulario textarea {
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 100%;
+    max-width: 500px;
+    border: 2px solid #128C7E;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #a4a4a4;
+    outline: none; }
+    .formulario textarea:focus {
+      border: 2px solid #075E54; }
+  .formulario .boton {
+    margin: 30px auto;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    background: #128C7E;
+    padding: 15px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer; }
+    .formulario .boton:hover {
+      background: #075E54; }
 
 /*# sourceMappingURL=portafolio.css.map */
