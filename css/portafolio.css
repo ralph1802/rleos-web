@@ -58,7 +58,34 @@ header .inicio {
       box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); }
       header .inicio .presentacion a:hover {
         background: #075E54; }
+    header .inicio .presentacion .copiar {
+      text-align: center;
+      border-radius: 10px;
+      border: 2px solid #128C7E;
+      padding: 10px;
+      margin-top: 20px; }
+      header .inicio .presentacion .copiar p {
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+        margin: auto;
+        display: flex;
+        align-items: center; }
+      header .inicio .presentacion .copiar a {
+        background: none;
+        border-radius: 0;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0);
+        padding: 0 5px;
+        margin: 0 5px;
+        border-left: 2px solid #128C7E; }
+        header .inicio .presentacion .copiar a img {
+          width: 20px;
+          border-radius: 0;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0); }
+          header .inicio .presentacion .copiar a img:hover {
+            filter: brightness(70%); }
   header .inicio img {
+    width: 350px;
     border-radius: 50%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
     header .inicio img:hover {
@@ -90,7 +117,6 @@ header .inicio {
     font-size: 24px;
     margin: 20px 5px; }
   .main .estudios a {
-    display: inline-block;
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
@@ -199,10 +225,11 @@ header .inicio {
       .trabajos .proyectos .tecnologia img {
         width: 25px; }
 
-footer {
+.contact {
   display: flex;
   justify-content: space-between;
-  margin: 100px 0; }
+  margin-top: 100px;
+  margin-bottom: 50px; }
 
 .redes {
   text-align: center;
@@ -280,5 +307,8 @@ footer {
     cursor: pointer; }
     .formulario .boton:hover {
       background: #075E54; }
+
+.pie {
+  text-align: center; }
 
 /*# sourceMappingURL=portafolio.css.map */
